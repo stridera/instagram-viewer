@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="526dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/llHeader"
+        android:weightSum="1">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivUser"
+            android:scaleType="fitCenter"
+            app:riv_corner_radius="10dip"
+            app:riv_border_width="1dip"
+            app:riv_border_color="#333333"
+            app:riv_mutate_background="true"
+            app:riv_oval="true"
+            android:src="@mipmap/ic_launcher"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="211dp"
+            android:layout_height="match_parent"
+            android:id="@+id/tvUsername"
+            android:text="Username"
+            android:gravity="center|left"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="143dp"
+            android:layout_height="match_parent"
+            android:id="@+id/tvTimestamp"
+            android:text="10H"
+            android:gravity="center|right"
+            android:layout_weight="0.04" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivImage"
+        android:src="@drawable/test_img"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:onClick="onImageClick" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCaption"
+        android:text="Caption"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLikesAndCommentCount"
+        android:text="Likes/Comments"
+        android:layout_weight="1"
+        style="@style/Base.TextAppearance.AppCompat.Caption" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLatestComments"
+        android:text="Comments"
+        android:layout_weight="1" />
+
+</LinearLayout>
